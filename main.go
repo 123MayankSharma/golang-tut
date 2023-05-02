@@ -7,7 +7,9 @@ func main() {
 	customObject := customTypeObjectGenerator("Mayank", []string{"Onion", "Potato"}, []float64{10.5, 11.2})
 	fmt.Println(customObject)
 	customObject.printMap()
-	customObject.updateItemPrice("Onion", 50.2)
+	(&customObject).updateItemPrice("Onion")
 	fmt.Println(customObject)
+
+	//now we will be taking input from user
 
 }
